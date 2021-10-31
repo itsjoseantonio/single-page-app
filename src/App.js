@@ -1,9 +1,17 @@
-import React from 'react';
+// Sections //
+import Banner from './sections/Banner';
+import Tasks from './sections/Tasks';
+
+// Components //
+import Layout from './components/Layout';
 
 const App = () => {
     return (
-        <div>
-            <h1>Wazaaaaa</h1>
+        <div className="App">
+            <Layout>
+                <Banner />
+                <Tasks />
+            </Layout>
         </div>
     );
 };

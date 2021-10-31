@@ -1,0 +1,52 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+.hamburgerIcon {
+    display: block;
+    cursor: pointer;
+
+    svg {
+        path {
+            fill: $primary-color;
+        }
+    }
+
+    @include breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.mobileContent {
+    background-color: $primary-color;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    nav {
+        text-align: center;
+        width: 100%;
+
+        ul {
+            li {
+                a {
+                    display: block;
+                    padding: 6px 0;
+                    font-size: 18px;
+                    color: $white;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

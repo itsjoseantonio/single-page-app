@@ -1,0 +1,35 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+header {
+    height: 60px;
+    background-color: $white;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    display: none;
+
+    @include breakpoint-up(md) {
+        display: block;
+    }
+
+    ul {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                color: #081e2b;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -39,17 +39,16 @@ const MobileDrawer = () => {
                 width="100%"
                 level={null}
                 placement="right"
-                handleChild={false}
                 handler={false}
                 duration={'0.4s'}
             >
                 <div className={styles.mobileContent}>
                     <nav>
                         <ul>
-                            {menu.map(({ path, label }, i) => (
+                            {menu.map(({ anchor, label }, i) => (
                                 <li key={i}>
                                     <Link
-                                        to={path}
+                                        to={anchor}
                                         spy={true}
                                         smooth={true}
                                         offset={-60}

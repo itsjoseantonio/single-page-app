@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Sticky innerZ={99} top={0} onStateChange={handleStateChange}>
-                <Header className={`${isSticky ? 'sticky' : 'unSticky'} `} />
+                <Header className={`${isSticky ? 'sticky' : ''} `} />
             </Sticky>
             <main className="main">{children}</main>
         </>

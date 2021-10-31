@@ -1,4 +1,3 @@
-// Main slider settings
 const sliderSettings = {
     dots: false,
     infinite: false,

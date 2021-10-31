@@ -20,9 +20,6 @@ const index = () => {
                 Banners.map(({ src, label }, i) => (
                     <SingleItem key={i} src={`${src}${i}`} label={label} />
                 ))}
-            {/* <img src="https://picsum.photos/1600/600?random=1" alt="" />
-            <img src="https://picsum.photos/1600/600?random=2" alt="" />
-            <img src="https://picsum.photos/1600/600?random=3" alt="" /> */}
         </Slider>
     );
 };

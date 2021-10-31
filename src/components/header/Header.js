@@ -26,10 +26,10 @@ const Header = ({ className }) => {
                         <div className="d-flex align-items-center justify-content-end h-100">
                             <nav className={styles.menu}>
                                 <ul>
-                                    {menu.map(({ path, label }, i) => (
+                                    {menu.map(({ anchor, label }, i) => (
                                         <li key={i}>
                                             <Link
-                                                to={path}
+                                                to={anchor}
                                                 spy={true}
                                                 smooth={true}
                                                 offset={-60}

@@ -5,6 +5,9 @@ import Tasks from './sections/Tasks';
 // Components //
 import Layout from './components/Layout';
 
+// Firebase //
+import './config/firebase.settings';
+
 const App = () => {
     return (
         <div className="App">

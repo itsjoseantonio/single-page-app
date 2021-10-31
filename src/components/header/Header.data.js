@@ -1,8 +1,8 @@
 const menu = [
-    { path: 'banner', label: 'Gallery' },
-    { path: 'tasks', label: 'Tasks' },
-    { path: 'contact', label: 'Contact us' },
-    { path: 'map', label: 'Map' },
+    { anchor: 'banner', label: 'Galería' },
+    { anchor: 'tasks', label: 'Tareas' },
+    { anchor: 'contact', label: 'Contáctanos' },
+    { anchor: 'map', label: 'Mapa' },
 ];
 
 export default menu;

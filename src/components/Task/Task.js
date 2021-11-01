@@ -26,7 +26,7 @@ const Task = () => {
     };
 
     const deleteTask = async (id) => {
-        if (window.confirm('Are you sure?')) {
+        if (window.confirm('¿Estás seguro?')) {
             await db.collection('tasks').doc(id).delete();
         }
     };
@@ -46,7 +46,7 @@ const Task = () => {
             <Row className="d-flex justify-content-center align-items-center h-100">
                 <Col className="col col-xl-10">
                     <div className="card border-0">
-                        <div className="card-body p-5">
+                        <div className="card-body p-2 p-sm-5">
                             <h2 className="mb-3">Lista de tareas</h2>
                             <TaskForm addTask={addTask} />
                             <ul className="list-group mb-0">

@@ -23,7 +23,7 @@ const TaskForm = ({ addTask }) => {
             <div className="form-outline flex-fill">
                 <input
                     type="text"
-                    className="form-control form-control-lg"
+                    className="form-control form-control"
                     name="name"
                     placeholder="Ejm. Hacer cardio"
                     onChange={handleInput}
@@ -31,7 +31,7 @@ const TaskForm = ({ addTask }) => {
                     required
                 />
             </div>
-            <button type="submit" className="btn btn-dark btn-lg ml-2">
+            <button type="submit" className="btn btn-dark btn ml-2">
                 Agregar tarea
             </button>
         </form>

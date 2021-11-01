@@ -1,12 +1,10 @@
 // Sections //
 import Banner from './sections/Banner';
 import Tasks from './sections/Tasks';
+import Contact from './sections/Contact';
 
 // Components //
 import Layout from './components/Layout';
-
-// Firebase //
-import './config/firebase.settings';
 
 const App = () => {
     return (
@@ -14,6 +12,7 @@ const App = () => {
             <Layout>
                 <Banner />
                 <Tasks />
+                <Contact />
             </Layout>
         </div>
     );

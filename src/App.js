@@ -2,6 +2,7 @@
 import Banner from './sections/Banner';
 import Tasks from './sections/Tasks';
 import Contact from './sections/Contact';
+import Map from './sections/Map';
 
 // Components //
 import Layout from './components/Layout';
@@ -13,6 +14,7 @@ const App = () => {
                 <Banner />
                 <Tasks />
                 <Contact />
+                <Map />
             </Layout>
         </div>
     );

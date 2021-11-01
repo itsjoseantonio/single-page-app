@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+// Utils //
+import { getLocation } from '../../utils/getLocation';
 
 const TaskForm = ({ addTask }) => {
-    const initialValues = { name: '', completed: false };
+    const initialValues = { name: '', completed: false, lat: '', long: '' };
     const [values, setValues] = useState(initialValues);
 
     const handleSubmit = (e) => {
@@ -14,6 +17,10 @@ const TaskForm = ({ addTask }) => {
         const { name, value } = e.target;
         setValues({ ...values, [name]: value });
     };
+
+    useEffect(() => {
+        getLocation({ ...values }, setValues);
+    }, []);
 
     return (
         <form

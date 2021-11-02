@@ -1,4 +1,4 @@
-# Countries App
+# Single Page App
 
 ### [Live Demo](https://single-page-app-778c8.web.app/)
 

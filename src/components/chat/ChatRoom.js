@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 // Component //
@@ -13,11 +13,6 @@ const ChatRoom = () => {
     const query = messagesRef.orderBy('createdAt').limitToLast(25);
     const [messages] = useCollectionData(query, { idField: 'id' });
     const [formValue, setFormValue] = useState('');
-    const scroll = useRef();
-
-    useEffect(() => {
-        scroll.current.scrollIntoView({ behavior: 'smooth' });
-    }, [messages]);
 
     const sendMessage = async (e) => {
         e.preventDefault();
@@ -41,7 +36,6 @@ const ChatRoom = () => {
                     messages.map((msg) => (
                         <ChatMessage key={msg.id} message={msg} />
                     ))}
-                <span ref={scroll}></span>
             </div>
             <form onSubmit={sendMessage}>
                 <div className="publisher bt-1 border-light">

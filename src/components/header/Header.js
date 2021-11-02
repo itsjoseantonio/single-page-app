@@ -17,12 +17,12 @@ const Header = ({ className }) => {
             <Container className="h-100">
                 <Row justifyContent="between" className="h-100">
                     <Col
-                        col="5"
+                        col="6"
                         className="d-flex align-items-center justify-content-start h-100"
                     >
                         <Logo />
                     </Col>
-                    <Col col="5" className="h-100">
+                    <Col col="6" className="h-100">
                         <div className="d-flex align-items-center justify-content-end h-100">
                             <nav className={styles.menu}>
                                 <ul>
